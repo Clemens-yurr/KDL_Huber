@@ -8,3 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+let slideIndex = 0;
+
+function moveSlide(n) {
+    const slides = document.querySelectorAll('.slide');
+    if (slides.length === 0) return; // Falls keine Slides da sind
+    
+    slides[slideIndex].classList.remove('active');
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    slides[slideIndex].classList.add('active');
+}

@@ -44,3 +44,73 @@ html { scroll-behavior: smooth; }
 footer { background: #222; color: #fff; padding: 2rem; text-align: center; }
 footer a { color: #4da6ff; text-decoration: none; }
 .footer-bottom { margin-top: 1rem; border-top: 1px solid #444; padding-top: 1rem; font-size: 0.9rem; }
+
+/* --- Slider & Service Styles --- */
+.coop-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.slides {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    padding: 0 2rem;
+    animation: fade 0.5s ease-in-out;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.slider-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.slider-btn:hover {
+    background: #004494;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
