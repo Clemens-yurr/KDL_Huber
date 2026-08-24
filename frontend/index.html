@@ -1,28 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KDL-Huber</title>
-    
+    <title>KDL-Huber GmbH | Kanaldienstleistungen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>KDL-Huber GmbH</h1>
-    <p></p>
-    <h2>Kontakt Daten</h2>
-    <h3>Email: </h3>
-    <p>office@kdl-huber.at</p>
-    <h3>Adresse: </h3>
-    <p> Wirtsfeldweg 13, 5661 Rauris</p>
-    <h3>Telefon: </h3>
-    <p> +43 664 6595616</p>
-    <p></p>
-    <h2>Über uns</h2>
-    <p>Kanal.- und Wasserdienstleistungen </p>
-    <p> Kanaldruckprüfungen laut ÖNORM B 2503</p>
-    <h3>Unsere Leistungen: </h3>
-    
+    <header class="navbar">
+        <div class="logo">KDL-Huber</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#services">Leistungen</a></li>
+                <li><a href="#partner">KDL-Verbund</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>KDL-Huber GmbH</h1>
+            <p>Ihr professioneller Partner für Kanaldienstleistungen</p>
+            <a href="#contact" class="btn">Kontakt aufnehmen</a>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Unsere Leistungen</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="images/druckprüfung-kanal-luft.jpg" alt="Kanaldienstleistungen">
+                <h3>Kanaldienstleistungen</h3>
+                <p>Umfassende Kanal- und Wasserdienstleistungen, inklusive Kanaldruckprüfungen nach ÖNORM B 2503.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partner" class="section bg-light">
+        <h2>Dienstleistungen im KDL-Verbund</h2>
+        <div class="partner-container">
+            <a href="https://kanalundwasser.at/" target="_blank" class="partner-card">
+                <h3>KDL Daniel Hofer</h3>
+                <p>TV-Inspektion & Hochdruckreinigung<br>ÖNORM EN13508-2, EN14654-3</p>
+            </a>
+            <a href="https://www.kanaldienstleistungen.com/" target="_blank" class="partner-card">
+                <h3>KDL Harald Hofer</h3>
+                <p>Kanal- und Wasserdienstleistungen<br>Druckprüfungen</p>
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Kontakt</h3>
+            <p>Wirtsfeldweg 13, 5661 Rauris</p>
+            <p>Email: <a href="mailto:office@kdl-huber.at">office@kdl-huber.at</a></p>
+            <p>Tel: +43 664 6595616</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 KDL-Huber GmbH. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
     
+    <script src="app.js"></script>
 </body>
 </html>
