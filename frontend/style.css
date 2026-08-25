@@ -95,3 +95,13 @@ footer a { color: #4da6ff; text-decoration: none; }
     .slide-content { padding: 1.5rem 1rem; }
     .partner-card { width: 100%; }
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
